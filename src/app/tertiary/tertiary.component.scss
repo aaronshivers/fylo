@@ -1,3 +1,47 @@
+@import "src/assets/scss/variables";
+
 .tertiary {
+  color: white;
+  background-color: $blue-desaturated;
+  text-align: center;
+  display: grid;
+  grid-gap: 3rem;
   padding: 3rem;
+}
+
+.tertiary__heading {
+  font-family: $font-headings;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.tertiary__body {
+  font-size: 1.4rem;
+}
+
+.tertiary__form {
+  display: grid;
+  grid-gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tertiary__input {
+  padding: 1rem;
+  border: 1px solid $blue-desaturated;
+  border-radius: 3px;
+}
+
+.tertiary__input::placeholder {
+  color: $gray;
+}
+
+.tertiary__button {
+  font-family: $font-body;
+  font-weight: bold;
+  color: $gray-blue;
+  background-color: $blue-bright;
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
 }
