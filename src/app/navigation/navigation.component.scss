@@ -1,0 +1,29 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__logo {
+  background-image: url("src/assets/images/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 2.5rem;
+  display: block;
+}
+
+.navigation__nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  font-size: 1.25rem;
+  list-style: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+.navigation__list-item:not(:last-of-type) {
+  margin-right: 2rem;
+}
