@@ -1,3 +1,49 @@
+@import "src/assets/scss/variables";
+
 .secondary {
+  color: $blue-dark;
+  background-color: $gray-blue;
+  display: grid;
+  grid-gap: 3rem;
   padding: 3rem;
+}
+
+.secondary__heading {
+  font-family: $font-headings;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.secondary__body {
+  font-size: 1.4rem;
+}
+
+.secondary__link {
+  color: $cyan;
+  font-size: 1.4rem;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.secondary__link-wrapper {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $cyan;
+  width: fit-content;
+}
+
+.secondary__link-text {
+  white-space: nowrap;
+}
+
+.secondary__link-image {
+  background-image: url("src/assets/images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2rem;
+  height: auto;
 }
