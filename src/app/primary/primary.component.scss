@@ -1,6 +1,9 @@
+@import "src/assets/scss/variables";
+
 .primary {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  display: grid;
+  grid-gap: 3rem;
 }
 
 .primary__bg-image {
@@ -10,4 +13,39 @@
   width: 100%;
   height: 0;
   padding: 0 0 calc(100% * 3 / 4);
+}
+
+.primary__heading {
+  font-family: $font-body;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+.primary__body {
+  font-size: 1.4rem;
+}
+
+.primary__form {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.primary__input {
+  padding: 1rem;
+  border: 1px solid $blue-desaturated;
+  border-radius: 3px;
+}
+
+.primary__input::placeholder {
+  color: $gray;
+}
+
+.primary__button {
+  font-family: $font-body;
+  font-weight: bold;
+  color: $gray-blue;
+  background-color: $blue-bright;
+  padding: 1rem;
+  border: none;
+  border-radius: 3px;
 }
