@@ -53,3 +53,33 @@
   width: 2rem;
   height: auto;
 }
+
+.secondary__testimonial {
+  background-color: white;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 2rem;
+  border-radius: 3px;
+  box-shadow: 0 0 15px $gray;
+}
+
+.testimonial__body {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.testimonial__user {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  justify-content: left;
+}
+
+.user__image {
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+.user__name {
+  font-weight: bold;
+}
