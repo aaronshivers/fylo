@@ -9,13 +9,18 @@
   padding: 3rem;
 }
 
+.tertiary__body {
+  display: grid;
+  grid-gap: 3rem;
+}
+
 .tertiary__heading {
   font-family: $font-headings;
   font-weight: 700;
   font-size: 1.6rem;
 }
 
-.tertiary__body {
+.tertiary__text {
   font-size: 1.4rem;
 }
 
@@ -44,4 +49,36 @@
   padding: 1rem;
   border: none;
   border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+  .tertiary {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    padding: 6rem;
+    text-align: left;
+  }
+
+  .tertiary__heading {
+    font-size: 3.5rem;
+  }
+
+  .tertiary__text {
+    font-size: 2rem;
+  }
+
+  .tertiary__form {
+    align-content: center;
+  }
+
+  .tertiary__input {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .tertiary__button {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 50%;
+  }
 }
