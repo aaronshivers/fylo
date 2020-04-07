@@ -4,12 +4,21 @@
   color: $blue-dark;
   background-color: $gray-blue;
   display: grid;
+  grid-template-areas: 'image'
+                       'body';
   grid-gap: 3rem;
   padding: 3rem;
 }
 
 .secondary__bg-image {
+  grid-area: image;
   width: 100%;
+}
+
+.secondary__body {
+  grid-area: body;
+  display: grid;
+  grid-gap: 3rem;
 }
 
 .secondary__heading {
@@ -19,7 +28,7 @@
   text-align: center;
 }
 
-.secondary__body {
+.secondary__text {
   font-size: 1.4rem;
 }
 
@@ -82,4 +91,41 @@
 
 .user__name {
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .secondary {
+    grid-template-areas: 'body image';
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+    grid-gap: 6rem;
+    padding: 6rem;
+  }
+
+  .secondary__body {
+    align-content: center;
+    text-align: left;
+  }
+
+  .secondary__heading {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+
+  .secondary__text {
+    font-size: 1.5rem;
+  }
+
+  .secondary__link {
+    font-size: 1.5rem;
+    justify-content: left;
+  }
+
+  .secondary__testimonial {
+    width: 50%;
+  }
+
+  .testimonial__body {
+    font-size: 1.3rem;
+  }
 }
